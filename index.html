@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+  <title>SAILER</title>
+  <link rel="stylesheet" href="style/sidebar.css">
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/general.css">
+  <style>
+    .olympic-boats-tray{
+      display: flex;
+      overflow-x: auto;
+    }
+    .olympic-boat{
+      text-align: center;
+      min-width: 300px;
+      margin-right: 2px;
+      cursor: pointer;
+      background-color: rgb(0, 0, 0);
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .olympic-boats-header{
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .olympic-boat{
+      transition: min-width 0.5s;
+      position: relative;
+    }
+
+    .boat-image{
+      transition: width 0.5s;
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .olympic-boat p{
+      font-size: 20px;
+      color: white;
+    }
+
+    .olympic-boat:hover .boat-image{
+      width: 500px;
+    }
+
+    .olympic-boat:hover{
+      min-width: 500px;
+    }
+
+    .boat-name{
+      font-weight: bold;
+      text-shadow: 3px 3px 3px rgba(242, 255, 0, 0.15);
+    }
+
+    .drugastr:link{
+      text-decoration: none;
+    }
+
+    .image-popup{
+      position: absolute;
+      top: 0;
+      width: 350px;
+      right: -350px;
+      z-index: 300;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .image-popup img{
+      width: 350px;
+    }
+
+    .olympic-boat:hover .image-popup{
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 draggable="true" class="hightext">SAILER</h1>
+  </div>
+
+  <nav class="sidebar">
+    sidebar
+  </nav>
+
+  <p class="olympic-boats-header">OLYMPIC BOATS</p>
+  <div class="olympic-boats-tray">
+    <a class="drugastr" href="boat-sites/nacra17.html">
+      <div class="olympic-boat">
+        <img class="boat-image" src="img/olympic-boats/Nacra-17/main.jpg" alt="">
+        <p class="boat-name">Nacra 17</p>
+        <p class="boat-price">est 20,000 &euro;</p>
+        <div class="image-popup">
+          <img src="img/olympic-boats/Nacra-17/Nacra17Specs.jpg" alt="">
+      </div>
+    </a>
+    
+    </div>
+    <div class="olympic-boat">
+      <img class="boat-image" src="img/olympic-boats/49er/main.jpg" alt="">
+      <p class="boat-name">49er</p>
+      <p class="boat-price">est 21,000 &euro;</p>
+    </div>
+    <div class="olympic-boat">
+      <img class="boat-image" src="img/olympic-boats/Nacra-17/main.jpg" alt="">
+      <p class="boat-name">Nacra 17</p>
+      <p class="boat-price">est 25,000 &euro;</p>
+    </div>
+    <div class="olympic-boat">
+      <img class="boat-image" src="img/olympic-boats/Nacra-17/main.jpg" alt="">
+      <p class="boat-name">Nacra 17</p>
+      <p class="boat-price">est 24,000 &euro;</p>
+    </div>
+    <div class="olympic-boat">
+      <img class="boat-image" src="img/olympic-boats/Nacra-17/main.jpg" alt="">
+      <p class="boat-name">Nacra 17</p>
+      <p class="boat-price">est 17,000 &euro;</p>
+    </div>
+    <div class="olympic-boat">
+      <img class="boat-image" src="img/olympic-boats/Nacra-17/main.jpg" alt="">
+      <p class="boat-name">Nacra 17</p>
+      <p class="boat-price">est 38,000 &euro;</p>
+    </div>
+  <div>
+
+  </div>
+
+</body>
+</html>

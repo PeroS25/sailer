@@ -1,0 +1,18 @@
+
+
+.hightext{
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 3px rg
+  rgba(0, 0, 0, 0.15);
+
+}
+
+
+.header{
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  margin-bottom: 60px;
+}
